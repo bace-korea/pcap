@@ -66,8 +66,7 @@ int main(int argc, char* argv[]) {
                         }
                     }
                     else{
-                        printf("  TCP pos : %d\n", (14+ip_h+tcp_h));
-                        printf("  Ressembled TCP : ");
+                        printf("  TCP : ");
                         for(int i=(14+ip_h+tcp_h); i<(14+ip_h+tcp_h+10);i++){
                             printf("%02X",packet[i]);
                         }
@@ -76,7 +75,6 @@ int main(int argc, char* argv[]) {
                 }
             }
         }
-        //printf("%u bytes captured\n", header->caplen);
     }
     pcap_close(handle);
     return 0;
