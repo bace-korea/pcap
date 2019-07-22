@@ -6,18 +6,6 @@ void usage() {
     printf("sample: pcap_test wlan0\n");
 }
 
-class LAWS
-{
-
-public:
-
-    int money;
-    void print_mac(u_int8_t *mac)
-    {
-        printf("%02X:%02X:%02X:%02X:%02X:%02X\n", mac[0], mac[1], mac[2], mac[3], mac[4], mac[5]);
-    }
-};
-
 int main(int argc, char* argv[]) {
     if (argc != 2) {
         usage();
